@@ -1,0 +1,32 @@
+"use strict";
+
+$(document).ready(function(){
+
+	$('a').on('click',function(){
+
+		$('.par').hide(); // la class .par pointe sur nos elements paragraphe qui sont caché en css , on utilise le .hide pour caché les element non selectionné par le a cliqué !!
+
+		var val= $(this).attr("href"); // this : l'element 'a 'cliqué en cours ! 
+
+		$(val).show();
+
+
+	});
+
+
+	$.getJSON('http://vps227573.ovh.net/u-15.json', function(data) { // data retourne json 
+
+			var t =$('[elt]'); // variable qui recupere les elements avec attribut elt (first name et last name)
+
+			for (var i=0; i< t.length; i++) 
+
+			{
+				var attribut=$(t[i]).attr("elt"); // variable qui recupere la valeur de l'attribut donc soit la valeur de first name soit de last name
+				var valeur= data[attribut]; // data[attribut] recupere la valeur de la clé qui corespon a notre attribut et la met dans une variable valeur
+				$(t[i]).html(valeur); // remplace les span elt donc soit first name soit last name par la variable valeur correspendante dans html ,
+			}
+
+	});
+
+
+});
