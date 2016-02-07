@@ -1,0 +1,95 @@
+/* 2 etats : normal et etat done ce qui est fait */
+
+body
+{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	background-color: white;
+	font-style: sans-serif;
+	font-size: xx-large;
+
+}
+
+
+h1
+{
+	color:#757575;
+}
+blockquote{
+
+	font-size:large;
+}
+
+		
+section
+{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+p{
+
+	font-size: large;
+}
+
+
+.footer , p
+{
+
+	display: inline-block;
+}
+
+#texte
+{
+	font-size:xx-large;
+	font-style: italic;
+	color:white;
+	width:50%;
+	height: 60px;
+	border: 1px solid black;
+	box-shadow:2px 2px 1px black ;
+	padding: none;
+	background-color: #795548;
+	text-align: center;
+}
+
+
+.effectue
+{
+
+text-decoration: line-through;
+
+}
+
+.item
+{
+	
+	width:50%;
+	margin:auto;
+	margin-top: 0.4%;
+	border: 2px solid beige;
+	padding: none;
+	text-align: center;
+	color:#757575;
+	word-wrap: break-word; 
+
+}
+
+
+.bouton
+{
+	float:right;
+	line-height: 2em;
+
+}
+
+.check
+{
+	float:left;
+	margin-top:8px;
+
+}
